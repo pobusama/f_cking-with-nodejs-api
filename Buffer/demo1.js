@@ -50,4 +50,13 @@ for (let b of buf9.values()) {
 for (let b of buf9.keys()) {
     console.log('bkeys:',b);
 }
+// 检查是否支持字符编码
+console.log('isEncoding:', Buffer.isEncoding('ascii'));
 
+// buffer 属性指向创建该 Buffer 的底层的 ArrayBuffer 对象
+const arryBuf10 = new ArrayBuffer(10);
+const buf11 = Buffer.from(arryBuf10);
+console.log('buf11.buffer === arryBuf10:', buf11.buffer === arryBuf10);
+
+
+// 书签（20170906）： http://nodejs.cn/api/buffer.html#buffer_buf_equals_otherbuffer
