@@ -3,8 +3,8 @@
 ## 学习计划
 
 ### 1.常用调用
-
 - Global Objects
+    - module [reading]
 - util
 
 ### 2.核心概念
