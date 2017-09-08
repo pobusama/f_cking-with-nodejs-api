@@ -16,8 +16,10 @@ console.log(__filename);
  */ 
 depenA();
 
-// 使用内部的 require() 机制查询模块的位置, 此操作只返回解析后的文件名，不会加载此模块。
-// 等价于通过 require 机制获取 dependenciesA.js 的 filename
+/**
+ * 使用内部的 require() 机制查询模块的位置, 此操作只返回解析后的文件名，不会加载此模块。
+ * 等价于通过 require 机制获取 dependenciesA.js 的 filename。
+ */
 console.log('resolve:', require.resolve('./dependenciesA'));
 
 // module.children 被该模块引用的模块对象
@@ -27,3 +29,16 @@ console.log(module.children.map(v => v.filename));
  * 测试 exports 和 module.exports 的区别
  */
 console.log('exportExam\'s keys:', Object.keys(exportExam));
+
+/**
+ * module 上的一些属性
+ */
+const depenBInfo = require('./dependenciesB').getModuleInfo();
+console.log('depenBInfo.filename:', depenBInfo.filename);
+console.log('depenBInfo.id:', depenBInfo.id);
+console.log('depenBInfo.loaded:', depenBInfo.loaded);
+console.log('depenBInfo.parent:', depenBInfo.parent.filename);
+console.log('depenBInfo.paths:', depenBInfo.paths);
+
+const depenBInfo2 = depenBInfo.moduleSelf.require(depenBInfo.id);
+console.log('depenBInfo2:', depenBInfo2);
