@@ -3,12 +3,13 @@
 ## 学习计划
 
 ### 1.常用调用
-- Global Objects
-    - module [reading]
+
+- Global Objects [reading]
 - util
 
 ### 2.核心概念
 
+- module [reading]
 - Timers
 - Buffer [reading]
 - Events
