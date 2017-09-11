@@ -42,3 +42,8 @@ console.log('depenBInfo.paths:', depenBInfo.paths);
 
 const depenBInfo2 = depenBInfo.moduleSelf.require(depenBInfo.id);
 console.log('depenBInfo2:', depenBInfo2);
+
+/**
+ * 判断是否直接被 node.js 运行（是否是主模块）
+ */
+console.log('is main:', require.main === module);
