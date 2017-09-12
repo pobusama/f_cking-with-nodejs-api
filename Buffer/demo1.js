@@ -60,3 +60,11 @@ console.log('buf11.buffer === arryBuf10:', buf11.buffer === arryBuf10);
 
 
 // 书签（20170906）： http://nodejs.cn/api/buffer.html#buffer_buf_equals_otherbuffer
+
+//equals
+
+const buf12 = Buffer.from([1,1,1]);
+const buf13 = Buffer.alloc(3, 1);
+console.log('buf12 equals buf13:', buf12.equals(buf13));
+
+// 书签（20170912）：http://nodejs.cn/api/buffer.html#buffer_class_method_buffer_allocunsafe_size

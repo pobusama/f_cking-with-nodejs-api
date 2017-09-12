@@ -10,7 +10,7 @@
 ### 2.核心概念
 
 - module [read]
-- Timers [reading]
+- Timers [read]
 - Buffer [reading]
 - Events
 - Stream
