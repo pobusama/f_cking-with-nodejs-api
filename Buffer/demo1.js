@@ -68,3 +68,12 @@ const buf13 = Buffer.alloc(3, 1);
 console.log('buf12 equals buf13:', buf12.equals(buf13));
 
 // 书签（20170912）：http://nodejs.cn/api/buffer.html#buffer_class_method_buffer_allocunsafe_size
+
+
+const arr1 = [1,2,3,'456'];
+const buf14 = Buffer.from('123456');
+console.log('arr1 byteLen:', Buffer.byteLength(arr1, 'utf8'));
+
+console.log('buf14 byteLen:', Buffer.byteLength(buf14, 'utf8')); 
+
+//书签（20170913）： http://nodejs.cn/api/buffer.html#buffer_class_method_buffer_from_arraybuffer_byteoffset_length
