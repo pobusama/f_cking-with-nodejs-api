@@ -11,8 +11,8 @@
 
 - module [read]
 - Timers [read]
-- Buffer [reading]
-- Events
+- Buffer [read]
+- Events [reading]
 - Stream
 - Modules
 - Errors
