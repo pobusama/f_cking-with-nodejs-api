@@ -1,0 +1,1 @@
+// 书签（20170920) http://nodejs.cn/api/stream.html#stream_buffering

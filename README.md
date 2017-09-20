@@ -12,7 +12,7 @@
 - module [read]
 - Timers [read]
 - Buffer [read]
-- Events [reading]
+- Events [read]
 - Stream
 - Modules
 - Errors
