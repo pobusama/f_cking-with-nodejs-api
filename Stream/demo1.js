@@ -27,3 +27,5 @@ process.nextTick(() => {
 });
 
 //书签（20170927) http://nodejs.cn/api/stream.html#stream_writable_write_chunk_encoding_callback
+
+//书签（20170929) http://nodejs.cn/api/stream.html#stream_two_modes
