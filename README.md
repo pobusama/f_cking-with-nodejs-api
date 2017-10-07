@@ -13,7 +13,7 @@
 - Timers [read]
 - Buffer [read]
 - Events [read]
-- Stream
+- Stream [read]
 - Modules
 - Errors
 
