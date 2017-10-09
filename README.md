@@ -4,7 +4,7 @@
 
 ### 1.常用调用
 
-- Global Objects [reading]
+- Global Objects [read]
 - util
 
 ### 2.核心概念
@@ -14,10 +14,10 @@
 - Buffer [read]
 - Events [read]
 - Stream [read]
-- Modules
-- Errors
+- Modules [read]
+- Errors [read]
 
 ### 3.高级概念
 
-- File System
+- File System[reading]
 - HTTP
