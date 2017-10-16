@@ -22,8 +22,8 @@ var server = http.createServer((req, res) => {
     }
     // 获取文件状态:
     fs.stat(src, (err, status) => {
-        if (!err && status.isFile()) {
-            doPipe(src);
+        if (err) {
+            doNotFound();
         } else if (status.isDirectory()){
             const defaultPath = `${src}/index.html`;
             fs.stat(defaultPath, (err, status) => {
@@ -33,8 +33,8 @@ var server = http.createServer((req, res) => {
                     doNotFound();
                 }
             });
-        } else {
-            doNotFound();
+        } else if (status.isFile()){
+            doPipe(src);
         }
     })
 });
